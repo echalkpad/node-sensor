@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "sensortrack": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "sensortrack",
+    "name": "sensortrack",
+    "connector": "mongodb"
+  }
+}

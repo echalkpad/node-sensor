@@ -4,7 +4,7 @@
 - [ExpressJS](http://expressjs.com): Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 - [MongoDb](https://www.mongodb.org/):MongoDB is the next-generation database that lets you create applications never before possible.
 - [Node-Red](http://nodered.org/): A visual tool for wiring the Internet of Things.
-- 
+
 # Backend Techonologies:
 
 - [Loopback](https://strongloop.com/): LoopBack is a highly-extensible, open-source Node.js framework. Compare with other frameworks. Quickly create dynamic end-to-end REST APIs.

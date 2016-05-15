@@ -13,6 +13,10 @@
 # Execution:
 node server/server.js
 
+```
+http://localhost:3000/red
+```
+
 # Workflows
 **Microcom Workflow**. Copy and import this flow from node-red import clipboard:
 ```

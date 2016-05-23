@@ -1,0 +1,36 @@
+.main {
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #f60000;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    background-color: #7e7b6d;
+}
+
+.main-header {
+    width: 100%;
+    background-color: #f5e79e;
+}
+
+.language {
+    background-color: #000088;
+}
+
+.main-menu {
+    background-color: #008800;
+}
+
+.container {
+    flex: 1;
+    background-color: #4C0A17;
+}
+
+.footer {
+    height: 50px;
+    background-color: #24748c;
+}

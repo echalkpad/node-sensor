@@ -2,7 +2,7 @@
   "name": "node-sensor",
   "version": "1.0.0",
   "main": "server/server.js",
-  "description": "node-sensor App",
+  "description": "node-sensor app",
   "scripts": {
     "pretest": "jshint ."
   },

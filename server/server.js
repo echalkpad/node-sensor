@@ -4,7 +4,6 @@ var RED = require('node-red');
 
 var app = module.exports = loopback();
 
-
 app.start = function() {
     // start the web server
     return app.listen(function() {

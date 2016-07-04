@@ -34,3 +34,6 @@ node_modules
 
 # webstorm project files
 .idea
+
+# bower files
+client/bower_components

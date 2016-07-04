@@ -6,12 +6,60 @@
 - [Node-Red](http://nodered.org/): A visual tool for wiring the Internet of Things.
 
 # Backend Techonologies:
-
 - [Loopback](https://strongloop.com/): LoopBack is a highly-extensible, open-source Node.js framework. Compare with other frameworks. Quickly create dynamic end-to-end REST APIs.
+
+# Frontend Techonologies:
+- [angularjs](https://angularjs.org/): HTML enhanced for web apps!.
+- [RequireJS](http://requirejs.org/): RequireJS is a JavaScript file and module loader.
+- [jQuery](https://jquery.com/): Query is a fast, small, and feature-rich JavaScript library.
+- [angular-ui-router](https://github.com/angular-ui/ui-router): The de-facto solution to flexible routing with nested views in AngularJS.
+- [angular-material](https://material.angularjs.org/latest/): For developers using AngularJS, Angular Material is both a UI Component framework and a reference implementation of Google's Material Design Specification.
+- [angular-animate](https://github.com/angular/bower-angular-animate): provides support for CSS-based animations (keyframes and transitions) as well as JavaScript-based animations via callback hooks.
+- [angular-aria](https://github.com/angular/bower-angular-aria): provides support for common ARIA attributes that convey state or semantic information about the application for users of assistive technologies, such as screen readers.
+- [angular-cookies](https://github.com/angular/bower-angular-cookies): provides a convenient wrapper for reading and writing browser cookies.
+- [angular-sanitize](https://github.com/angular/bower-angular-sanitize): provides functionality to sanitize HTML.
+- [angular-datatables](https://github.com/l-lin/angular-datatables): DataTables using angular directives.
+- [angular-google-maps](https://github.com/angular-ui/angular-google-maps): AngularJS directives for the Google Maps Javascript API.
+- [angular-chart.js](https://github.com/jtblin/angular-chart.js): Reactive, responsive, beautiful charts for AngularJS using Chart.js.
+- [angular-chartist.js](https://github.com/paradox41/angular-chartist.js): Angular directive for Chartist.js.
+- [angular-messages](https://github.com/angular/bower-angular-messages): provides enhanced support for displaying messages within templates (typically within forms or when rendering message objects that return key/value data).
+- [angular-nvd3](https://github.com/krispo/angular-nvd3): An AngularJS directive for NVD3.js reusable charting library (based on D3.js).
+- [angular-resource](https://github.com/angular/bower-angular-resource): provides interaction support with RESTful services via the $resource service.
+- [angular-timer](https://github.com/siddii/angular-timer): A simple AngularJS directive demonstrating re-usability & interoperability.
+- [angular-translate](https://github.com/angular-translate/bower-angular-translate): A translation module for AngularJS.
+- [angular-translate-loader-partial](https://github.com/angular-translate/bower-angular-translate-loader-partial): A plugin for Angular Translate.
+- [c3-calendar](https://github.com/jettro/c3-angular-directive): An angularjs directive to integrate c3.js within your angularjs project.
+- [datatables-responsive](https://github.com/DataTables/Responsive): Responsive extension for DataTables, providing support for complex tables on all device screen sizes.
+- [d3](https://github.com/mbostock-bower/d3-bower): A JavaScript visualization library for HTML and SVG.
+- [highlightjs](https://github.com/components/highlightjs): Shim repository for Highlight.js. http://highlightjs.org/. 
+- [mobile-detect](https://github.com/hgoebl/mobile-detect.js): Device detection (phone, tablet, desktop, mobile grade, os, versions).
+- [moment](https://github.com/moment/moment): Parse, validate, manipulate, and display dates in javascript.
+- [perfect-scrollbar](https://github.com/noraesae/perfect-scrollbar): Minimalistic but perfect custom scrollbar plugin.
+- [textAngular](https://github.com/fraywing/textAngular): A radically powerful Text-Editor/Wysiwyg editor for Angular.js
+- [toastr](https://github.com/johnpapa/toastr-bower): is a Javascript library for non-blocking notifications. jQuery is required. The goal is to create a simple core library that can be customized and extended.
+- [angular-ui-sortable](https://github.com/angular-ui/ui-sortable): This directive allows you to jQueryUI Sortable. This directive allows you to sort an array with drag & drop.
+- [angular-xeditable](https://github.com/vitalets/angular-xeditable): is a bundle of AngularJS directives that allows you to create editable elements in your projects.
+- [Sortable](https://github.com/RubaXa/Sortable):  is a minimalist JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery.
+- [jqueryui-touch-punch](https://github.com/furf/jquery-ui-touch-punch): jQuery UI Touch Punch is a small hack that enables the use of touch events on sites using the jQuery UI user interface library.
+- [moment-picker](https://github.com/indrimuska/angular-moment-picker): Angular Moment Picker is an AngularJS directive for date and time picker using Moment.js.
+- [angular-ui-tree](https://github.com/angular-ui-tree/angular-ui-tree): Angular UI Tree is an AngularJS UI component that can sort nested lists, provides drag & drop support and doesn't depend on jQuery.
+- [angular-dragdrop](https://github.com/angular-dragdrop/angular-dragdrop): Angular HTML5 Drag and Drop directive written in pure with no dependency on JQuery.
+- [css-element-queries](https://github.com/marcj/css-element-queries): CSS-Element-Queries Polyfill. proof-of-concept for high-speed element dimension/media queries in valid css.
+- [jsPlumb](https://github.com/sporritt/jsPlumb): jsPlumb provides a means for a developer to visually connect elements on their web pages. It uses SVG and runs on all browsers from IE9 and later.
+- [angular-gantt](https://github.com/angular-gantt/angular-gantt): provides a gantt chart component to your AngularJS application.
+- [moment-range](https://github.com/gf3/moment-range): Fancy date ranges for Moment.js.
+- [socket.io-client](https://github.com/socketio/socket.io-client): Realtime application framework (client) http://socket.io
+- [angular-socket-io](https://github.com/btford/angular-socket-io): Socket.IO component for AngularJS.
 
 # Execution:
 node server/server.js
 
+To access UI interface
+```
+http://localhost:3000
+```
+
+To access Workflow Designer 
 ```
 http://localhost:3000/red
 ```

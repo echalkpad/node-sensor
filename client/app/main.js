@@ -6,13 +6,14 @@ define(['require',
         'angular',
         'domReady',
         'bootstrap',
-        'app',
-        'includes'
-], function (require, $, ng, domReady) {
-  'use strict';
+        'includes',
+        'app'], function (require, $, ng, domReady) {
+    'use strict';
 
-  domReady(function (document) {
-    ng.bootstrap(document, ['app']);
-    ng.resumeBootstrap();
-  });
+    domReady(function (document) {
+        ng.bootstrap(document, ['app']);
+        ng.resumeBootstrap();
+
+        ng.element(document).scope().$emit('$viewContentAnimationEnded');
+    });
 });

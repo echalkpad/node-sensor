@@ -1,34 +1,37 @@
-'use strict';
-
 define(['angular',
         'angular-couch-potato',
         'angular-ui-router',
         'angular-animate',
-        'angular-bootstrap'
-], function (ng, couchPotato) {
+        'angular-bootstrap'], function (ng, couchPotato) {
+    'use strict';
 
-  var app = ng.module('app', [
-                      'scs.couch-potato',
-                      'ui.router',
-                      'ui.bootstrap',
+    var app = ng.module('app', [
+        'scs.couch-potato',
+        'ui.router',
+        'ui.bootstrap',
 
-                      // App
-                      'app.modules.layout',
-                      'app.modules.dashboard'
-  ]);
+        // App module
+        'fuse'
+    ]);
 
-  couchPotato.configureApp(app);
+    couchPotato.configureApp(app);
 
-  app.config(function ($provide, $httpProvider) {
+    app.config(function ($provide, $httpProvider) {
+    });
 
-  });
+    app.run(function ($couchPotato, $rootScope, $state, $stateParams) {
+        app.lazy = $couchPotato;
 
-  app.run(function ($couchPotato, $rootScope, $state, $stateParams) {
-    app.lazy = $couchPotato;
+        $rootScope.$state = $state;
+        $rootScope.$stateParams=$stateParams;
 
-    $rootScope.$state = $state;
-    $rootScope.$stateParams=$stateParams;
-  });
+        // Remove the splash screen
+        $rootScope.$on('$viewContentAnimationEnded', function (event) {
+            if ( event.targetScope.$id === $rootScope.$id ) {
+                $rootScope.$broadcast('msSplashScreen::remove');
+            }
+        });
+    });
 
-  return app;
+    return app;
 });

@@ -42,8 +42,7 @@
     "tag": "2.0.5",
     "commit": "0fbed91ee7308e89351e5a242eea4495605bab52"
   },
-  "_source": "git://github.com/sporritt/jsPlumb.git",
-  "_target": "~2.0.5",
-  "_originalSource": "jsPlumb",
-  "_direct": true
+  "_source": "https://github.com/sporritt/jsPlumb.git",
+  "_target": "2.0.5",
+  "_originalSource": "jsPlumb"
 }

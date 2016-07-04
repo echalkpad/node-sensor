@@ -37,3 +37,6 @@ node_modules
 
 # bower files
 client/bower_components
+
+# node-red temporal directory
+.nodered

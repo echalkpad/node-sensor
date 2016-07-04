@@ -1,11 +1,10 @@
 # Infraestructure Techonologies:
-
-- [NodeJS](https://nodejs.org/): Event-driven I/O server-side JavaScript environment based on V8. Includes API documentation, change-log, examples and announcements.
-- [ExpressJS](http://expressjs.com): Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 - [MongoDb](https://www.mongodb.org/):MongoDB is the next-generation database that lets you create applications never before possible.
 - [Node-Red](http://nodered.org/): A visual tool for wiring the Internet of Things.
 
 # Backend Techonologies:
+- [NodeJS](https://nodejs.org/): Event-driven I/O server-side JavaScript environment based on V8. Includes API documentation, change-log, examples and announcements.
+- [ExpressJS](http://expressjs.com): Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 - [Loopback](https://strongloop.com/): LoopBack is a highly-extensible, open-source Node.js framework. Compare with other frameworks. Quickly create dynamic end-to-end REST APIs.
 
 # Frontend Techonologies:

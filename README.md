@@ -82,7 +82,7 @@ http://localhost:3000/red
 
 # Database dump
 Create database called **sensortrack**
-[sensortrack.zip](https://github.com/masalinas/node-sensor/files/265125/sensortrack.zip)
+[sensortrack-db.zip](https://github.com/masalinas/node-sensor/files/362141/SENSORTRACK.zip)
 
 # Licenses
 The source code is released under Apache 2.0.

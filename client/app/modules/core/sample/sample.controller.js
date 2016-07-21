@@ -3,7 +3,7 @@ define(['angular',
         'angular-ui-router'], function(ng, couchPotato) {
     'use strict';
 
-    var module = ng.module('app.sample');
+    var module = ng.module('app.modules.core.sample');
 
     couchPotato.configureApp(module);
 

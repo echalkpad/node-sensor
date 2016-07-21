@@ -41,7 +41,11 @@ var require = {
         'perfect-scrollbar': '../bower_components/perfect-scrollbar/js/perfect-scrollbar',
         'toastr': '../bower_components/toastr/toastr',
 
-        // app dependencies
+        'lodash': '../bower_components/lodash/lodash',
+        'angular-simple-logger': '../bower_components/angular-simple-logger/dist/angular-simple-logger.min',
+        'angular-google-maps': '../bower_components/angular-google-maps/dist/angular-google-maps.min',
+
+        // core app dependencies
         'core.module': 'core/core.module',
         'core.config': 'core/core.config',
         'core.run': 'core/core.run',
@@ -84,10 +88,20 @@ var require = {
         'quick-panel.controller': 'quick-panel/quick-panel.controller',
         'chat-tab.controller': 'quick-panel/tabs/chat/chat-tab.controller',
 
-        'main.controller': 'main/main.controller',
-        'sample.module': 'main/sample/sample.module',
-        'sample.controller': 'main/sample/sample.controller',
+        // app core modules dependencies
+        'modules.controller': 'modules/modules.controller',
 
+        'core.modules': 'modules/core/core.modules',
+
+        'sample.module': 'modules/core/sample/sample.module',
+        'sample.controller': 'modules/core/sample/sample.controller',
+
+        'maps.module': 'modules/core/maps/maps.module',
+        'maps.controller': 'modules/core/maps/maps.controller',
+
+        // app custom modules dependencies
+
+        // app index dependencies
         'index.api': 'index/index.api',
         'index.config': 'index/index.config',
         'index.constants': 'index/index.constants',
@@ -126,7 +140,10 @@ var require = {
         'angular-datatables.buttons': { deps: ['angular-datatables'] },
         'angular-datatables.select': { deps: ['angular-datatables'] },
 
-        // app dependencies
+        'angular-simple-logger': { deps: ['angular'] },
+        'angular-google-maps': { deps: ['angular', 'lodash', 'angular-simple-logger'] },
+
+        // core app dependencies
         'core.module': { deps: ['angular']},
         'core.config': { deps: ['core.module']},
         'core.run':  { deps: ['core.module']},
@@ -169,17 +186,33 @@ var require = {
         'quick-panel.controller': { deps: ['quick-panel.module']},
         'chat-tab.controller': { deps: ['quick-panel.module']},
 
+        // app core modules dependencies
+        'modules.controller': { deps: ['index.module']},
+
+        'core.modules': { deps: ['maps.module']},
+
         'sample.module': { deps: ['angular']},
         'sample.controller': { deps: ['sample.module']},
 
-        'index.module': { deps: ['angular', 'core.module', 'navigation.module', 'toolbar.module', 'quick-panel.module', 'sample.module']},
+        'maps.module': { deps: ['angular']},
+        'maps.controller': { deps: ['maps.module']},
+
+        // app custom modules dependencies
+
+        // app index dependencies
+        'index.module': { deps: ['angular',
+                                 'core.module',
+                                 'navigation.module',
+                                 'toolbar.module',
+                                 'quick-panel.module',
+                                 //'core.modules',
+                                 'sample.module']},
         'index.api': { deps: ['index.module']},
         'index.config': { deps: ['index.module']},
         'index.constants': { deps: ['index.module']},
         'index.controller': { deps: ['index.module']},
         'index.route': { deps: ['index.module']},
-        'index.run': { deps: ['index.module']},
-        'main.controller': { deps: ['index.module']}
+        'index.run': { deps: ['index.module']}
     },
     priority: [
         'jquery',

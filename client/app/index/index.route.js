@@ -13,11 +13,12 @@ define(['angular',
     /** @ngInject */
     function routeConfig($stateProvider, $urlRouterProvider, $locationProvider) {
         //$locationProvider.html5Mode(true);
-        $locationProvider.html5Mode({enabled: true,
+        /*$locationProvider.html5Mode({enabled: true,
                                      requireBase: false
-        });
+        });*/
 
-        $urlRouterProvider.otherwise('/sample');
+        //$urlRouterProvider.otherwise('/sample');
+        $urlRouterProvider.otherwise('/modules/maps');
 
         /**
          * Layout Style Switcher

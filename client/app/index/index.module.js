@@ -16,8 +16,8 @@ define(['angular',
         // Quick panel
         'app.quick-panel',
 
-        // Sample
-        'app.sample'
+        // core module
+        'app.modules.core'
     ]);
 
     couchPotato.configureApp(module);

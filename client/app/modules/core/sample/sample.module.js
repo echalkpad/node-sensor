@@ -4,22 +4,21 @@ define(['angular',
         'ms-navigation.directive'], function(ng, couchPotato) {
     'use strict';
 
-    var module = ng.module('app.sample', []);
+    var module = ng.module('app.modules.core.sample', []);
 
     couchPotato.configureApp(module);
 
     module.config(config);
 
     /** @ngInject */
-    function config($stateProvider, $translatePartialLoaderProvider, msApiProvider, msNavigationServiceProvider)
-    {
+    function config($stateProvider, $translatePartialLoaderProvider, msApiProvider, msNavigationServiceProvider, $locationProvider) {
         // State
         $stateProvider
             .state('app.sample', {
                 url    : '/sample',
                 views  : {
                     'content@app': {
-                        templateUrl: 'app/main/sample/sample.html',
+                        templateUrl: 'app/modules/core/sample/sample.html',
                         controller : 'SampleController as vm'
                     }
                 },
@@ -32,7 +31,7 @@ define(['angular',
             });
 
         // Translation
-        $translatePartialLoaderProvider.addPart('app/main/sample');
+        $translatePartialLoaderProvider.addPart('app/modules/core/sample');
 
         // Api
         msApiProvider.register('sample', ['app/data/sample/sample.json']);

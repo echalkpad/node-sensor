@@ -17,7 +17,7 @@ var require = {
         'angular-sanitize': '../bower_components/angular-sanitize/angular-sanitize.min',
         'angular-translate': '../bower_components/angular-translate/angular-translate.min',
         'angular-translate-loader-partial': '../bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min',
-        'domReady': '../bower_components/requirejs-domready/domReady',
+        'domReady': '../bower_components/domReady/domReady',
         'jquery-datatables': '../bower_components/datatables/media/js/jquery.dataTables.min',
         'angular-datatables': '../bower_components/angular-datatables/dist/angular-datatables',
         'angular-datatables.bootstrap': '../bower_components/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap',
